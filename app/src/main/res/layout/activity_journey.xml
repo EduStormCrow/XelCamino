@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lb_journey"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Ruta Actual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tx_journey_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintStart_toEndOf="@+id/lb_journey"
+        app:layout_constraintTop_toTopOf="@+id/lb_journey"
+        tools:text="Viaje al sur fin de año 2017" />
+
+    <TextView
+        android:id="@+id/lb_start_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Iniciada a Km auto: "
+        app:layout_constraintStart_toStartOf="@+id/lb_journey"
+        app:layout_constraintTop_toBottomOf="@+id/lb_journey" />
+
+
+    <TextView
+        android:id="@+id/tx_journey_start_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tx_journey_name"
+        app:layout_constraintTop_toTopOf="@+id/lb_start_km"
+        tools:text="25600" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Cargas en ruta"
+        app:layout_constraintStart_toStartOf="@+id/lb_start_km"
+        app:layout_constraintTop_toBottomOf="@+id/lb_start_km" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="364dp"
+        android:layout_height="333dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/refuel_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonEndJourney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Finalizar ruta"
+        app:layout_constraintStart_toEndOf="@+id/buttonRefuel"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/buttonRefuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Cargar Nafta"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddJourney"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/buttonAddJourney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Agregar ruta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+</android.support.constraint.ConstraintLayout>

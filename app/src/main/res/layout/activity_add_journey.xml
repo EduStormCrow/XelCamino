@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+    <!--Journey Name-->
+    <TextView
+        android:text="@string/journey_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/journey_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <!--Start Km-->
+    <TextView
+        android:text="@string/car_kms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/journey_start_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <!--Fuel Tank-->
+    <TextView
+        android:text="@string/fuel_tank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/journey_fuel_tank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--DateTime-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/journey_date_time" />
+
+    <TextView
+        android:id="@+id/journey_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text= "21/12/17 12:30"/>
+
+
+
+    <Button
+        android:id="@+id/saveJourneyButton"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_button"
+        android:textColor="@android:color/primary_text_dark" />
+
+</LinearLayout>
+

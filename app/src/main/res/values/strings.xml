@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PorElCamino</string>
+    <string name="action_settings">Settings</string>
+    <string name="reports_activity_name">Reportes</string>
+    <string name="journey_activity_name">Ruta Actual</string>
+    <string name="refuel_activity_name">Cargar Nafta</string>
+    <string name="add_button">Add</string>
+    <string name="journey_name">Journey Name</string>
+    <string name="car_kms">Car Kms</string>
+    <string name="fuel_tank">Fuel Tank</string>
+    <string name="journey_date_time">Date/Time</string>
+    <string name="add_journey_activity_name">Agregar ruta</string>
+    <string name="Refuel_LitresPlusType">lts /</string>
+
+    <string name="fuel_unknown">Fuel not defined</string>
+    <string name="fuel_petrol_premium_unlead">Petrol Premium Unlead</string>
+    <string name="fuel_petrol_super_unlead">Petrol Super Unlead</string>
+    <string name="fuel_diesel_premium">Diesel Premium</string>
+    <string name="fuel_diesel_super_unlead">Diesel Super Unlead</string>
+    <string name="fuel_gas">Gas</string>
+    <string name="fuel_biofuels">Bio Fuels</string>
+
+</resources>

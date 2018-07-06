@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="385dp"
+        android:layout_height="544dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_journey"
+        android:layout_width="68dp"
+        android:layout_height="81dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="96dp"
+        android:padding="16dp"
+        android:src="@drawable/car_pointer"
+        android:text="@string/journey_activity_name"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_refuel"
+        android:layout_width="68dp"
+        android:layout_height="81dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/pointer_background"
+        android:padding="16dp"
+        android:src="@drawable/refuel_pointer"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_reports"
+        android:layout_width="68dp"
+        android:layout_height="81dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="360dp"
+        android:padding="16dp"
+        android:src="@drawable/report_pointer"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/ba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/journey_activity_name"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_journey"
+        app:layout_constraintStart_toEndOf="@+id/fab_journey"
+        app:layout_constraintTop_toTopOf="@+id/fab_journey"
+        android:background="@android:color/white"
+
+        />
+
+    <TextView
+        android:id="@+id/lb_reports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/reports_activity_name"
+        app:layout_constraintStart_toEndOf="@+id/fab_reports"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_reports"
+        app:layout_constraintTop_toTopOf="@+id/fab_reports"
+        android:background="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/lb_refuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_refuel"
+        app:layout_constraintStart_toEndOf="@+id/fab_refuel"
+        app:layout_constraintTop_toTopOf="@+id/fab_refuel"
+        android:text="@string/refuel_activity_name"
+        android:background="@android:color/white"
+        />
+
+</android.support.constraint.ConstraintLayout>
